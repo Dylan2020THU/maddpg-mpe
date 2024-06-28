@@ -12,7 +12,9 @@ if __name__ == '__main__':
     env, args = make_env(args)
     runner = Runner(args, env)
     if args.evaluate:
+        print("------------------Start evaluating...------------------")
         returns = runner.evaluate()
         print('Average returns is', returns)
     else:
+        print("------------------Start training...------------------")
         runner.run()
