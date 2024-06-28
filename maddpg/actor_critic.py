@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 # import torch.nn.functional as F
-from transformer import Transformer
+from .transformer import Transformer
 import math
 
 class PositionalEncoding(nn.Module):
